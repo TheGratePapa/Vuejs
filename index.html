@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+
+        <div id="app-3">
+            {{ matricula }}
+        </div>
+
+        <div id="app-2">
+           <ol>
+               <li v-for="msg in bucl">
+                 {{ msg.message }}
+               </li>
+           </ol>
+          </div>
+
+        <div id="app-4">
+           <p> Rata tipo: </p>
+           <input v-model="cosa">
+           <br>
+          <img style="width:600px;height:500px" v-bind:src="imag">
+        </div>
+
+
+        <script src="basic.js"></script>
+    </body>
+</html>
